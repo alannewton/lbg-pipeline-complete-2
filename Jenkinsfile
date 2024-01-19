@@ -32,7 +32,7 @@ pipeline{
                     scannerHome = tool 'sonarqube'
                 }
                 steps {
-                    withSonarQubeEnv('sonar-qube-1') {        
+                    withSonarQubeEnv('sonarqube-alan') {        
                     sh "${scannerHome}/bin/sonar-scanner"
                     }
                     timeout(time: 10, unit: 'MINUTES'){
